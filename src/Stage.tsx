@@ -21,11 +21,11 @@ export const Stage = ({...props}:StageProps) => {
     <Wrapper {...props}>
       <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 5], fov: 25 }}>
         <color attach="background" args={['#111']} />
-        <ambientLight intensity={1} />
-        <Physics gravity={[0, 0, 0]}>
-          <MarchingCubes resolution={45} maxPolyCount={5000} enableUvs={false} enableColors>
-            <meshStandardMaterial color="black" metalness={1} 
-        roughness={0.2} />
+        <ambientLight intensity={1} color="black"/>
+        <Physics gravity={[0, 2, 0]}>
+          <MarchingCubes resolution={45} maxPolyCount={10000} enableUvs={false} enableColors>
+            <meshStandardMaterial color="black" metalness={0.2} 
+        roughness={0.1} />
         
             <MetaBall color="indianred" position={[1, 1, 0.5]} />
             <MetaBall color="indianred" position={[1, 1, 0.5]} />

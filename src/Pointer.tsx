@@ -23,8 +23,8 @@ export const Pointer = ({
   })
   return (
     <RigidBody type="kinematicPosition" colliders={false} ref={ref}>
-      <MarchingCube strength={0.5} subtract={10} />
-      <BallCollider args={[0.2]} />
+      <MarchingCube strength={0.3} subtract={10} />
+      <BallCollider args={[0.1]} />
     </RigidBody>
   )
 }

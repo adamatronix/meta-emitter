@@ -30,8 +30,8 @@ export const MetaBall = ({
 
   return (
     <RigidBody ref={api} colliders={false} linearDamping={80} angularDamping={23.95} position={position} {...props}>
-      <MarchingCube strength={0.15} subtract={0.8} color={color} />
-      <BallCollider args={[0.08]}/>
+      <MarchingCube strength={0.19} subtract={0.8} color={color} />
+      <BallCollider args={[0.14]}/>
     </RigidBody>
   )
 }
