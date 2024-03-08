@@ -22,8 +22,8 @@ export const Stage = ({...props}:StageProps) => {
       <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 5], fov: 25 }}>
         <color attach="background" args={['#f0f0f0']} />
         <ambientLight intensity={2} />
-        <Physics gravity={[0, 0, 0]}>
-          <MarchingCubes resolution={50} maxPolyCount={9000} enableUvs={false} enableColors>
+        <Physics gravity={[0, 2, 0]}>
+          <MarchingCubes resolution={40} maxPolyCount={5000} enableUvs={false} enableColors>
             <meshStandardMaterial color="black" metalness={0.6} 
         roughness={0.04} />
             <MetaBall color="indianred" position={[1, 1, 0.5]} />
@@ -32,6 +32,17 @@ export const Stage = ({...props}:StageProps) => {
             <MetaBall color="orange" position={[-2, -2, 7]} />
             <MetaBall color="hotpink" position={[3, 3, 0.5]} />
             <MetaBall color="aquamarine" position={[-10, -3, -0.5]} />
+            <MetaBall color="indianred" position={[1, 1, 0.5]} />
+            <MetaBall color="skyblue" position={[-1, -7, -7.5]} />
+            <MetaBall color="teal" position={[4, 2, 2.5]} />
+            <MetaBall color="orange" position={[-2, -2, 7]} />
+            <MetaBall color="hotpink" position={[3, 3, 0.5]} />
+            <MetaBall color="aquamarine" position={[-10, -3, -0.5]} />
+            <MetaBall color="indianred" position={[1, 1, 0.5]} />
+            <MetaBall color="skyblue" position={[-1, -7, -7.5]} />
+            <MetaBall color="teal" position={[4, 2, 2.5]} />
+            <MetaBall color="orange" position={[-2, -2, 7]} />
+            <MetaBall color="hotpink" position={[3, 3, 0.5]} /> 
             <Pointer />
           </MarchingCubes>
 
