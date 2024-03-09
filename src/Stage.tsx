@@ -23,21 +23,21 @@ export const Stage = ({...props}:StageProps) => {
         <color attach="background" args={['#111']} />
         <ambientLight intensity={1} color="black"/>
         <Physics gravity={[0, 2, 0]}>
-          <MarchingCubes resolution={45} maxPolyCount={10000} enableUvs={false} enableColors>
+          <MarchingCubes resolution={60} maxPolyCount={10000} enableUvs={false} enableColors>
             <meshStandardMaterial color="black" metalness={0.2} 
         roughness={0.1} />
         
+            <MetaBall color="indianred" position={[0.2, 0, 0.5]} />
+            <MetaBall color="indianred" position={[0, 1, 0]} />
+            <MetaBall color="indianred" position={[0, 1, 0]} />
+            <MetaBall color="indianred" position={[1, 0, 0]} />
+            <MetaBall color="indianred" position={[1, 1, 0]} />
+            <MetaBall color="indianred" position={[1, 0, 0.5]} />
+            <MetaBall color="indianred" position={[0, 0, 0.5]} />
+            <MetaBall color="indianred" position={[1, 0.2, 0.5]} />
+            <MetaBall color="indianred" position={[1, 0.2, 0.5]} />
             <MetaBall color="indianred" position={[1, 1, 0.5]} />
-            <MetaBall color="indianred" position={[1, 1, 0.5]} />
-            <MetaBall color="indianred" position={[1, 1, 0.5]} />
-            <MetaBall color="indianred" position={[1, 1, 0.5]} />
-            <MetaBall color="indianred" position={[1, 1, 0.5]} />
-            <MetaBall color="indianred" position={[1, 1, 0.5]} />
-            <MetaBall color="indianred" position={[1, 1, 0.5]} />
-            <MetaBall color="indianred" position={[1, 1, 0.5]} />
-            <MetaBall color="indianred" position={[1, 1, 0.5]} />
-            <MetaBall color="indianred" position={[1, 1, 0.5]} />
-            <MetaBall color="skyblue" position={[-1, -7, -7.5]} />
+            <MetaBall color="skyblue" position={[-1, -1, -0.5]} />
             
             <Pointer />
           </MarchingCubes>
