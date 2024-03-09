@@ -19,26 +19,22 @@ export const Stage = ({...props}:StageProps) => {
 
   return (
     <Wrapper {...props}>
-      <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 5], fov: 25 }}>
+      <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 125], fov: 25 }}>
         <color attach="background" args={['#111']} />
         <ambientLight intensity={1} color="black"/>
         <Physics gravity={[0, 2, 0]}>
-          <MarchingCubes resolution={60} maxPolyCount={10000} enableUvs={false} enableColors>
+          <MarchingCubes resolution={35} maxPolyCount={7000} enableUvs={false} enableColors>
             <meshStandardMaterial color="black" metalness={0.2} 
         roughness={0.1} />
-        
-            <MetaBall color="indianred" position={[0.2, 0, 0.5]} />
-            <MetaBall color="indianred" position={[0, 1, 0]} />
-            <MetaBall color="indianred" position={[0, 1, 0]} />
-            <MetaBall color="indianred" position={[1, 0, 0]} />
-            <MetaBall color="indianred" position={[1, 1, 0]} />
-            <MetaBall color="indianred" position={[1, 0, 0.5]} />
-            <MetaBall color="indianred" position={[0, 0, 0.5]} />
-            <MetaBall color="indianred" position={[1, 0.2, 0.5]} />
-            <MetaBall color="indianred" position={[1, 0.2, 0.5]} />
-            <MetaBall color="indianred" position={[1, 1, 0.5]} />
-            <MetaBall color="skyblue" position={[-1, -1, -0.5]} />
-            
+            <MetaBall color="indianred" position={[0.2, 0, 0.2]} strength={0.2} args={0.11}/>
+            <MetaBall color="indianred" position={[0.2, 0, 0]} strength={0.1} args={0.11}/>
+            <MetaBall color="indianred" position={[-0.1, 0, 0]} strength={0.2} args={0.11}/>
+            <MetaBall color="indianred" position={[0.2, 0, 0.1]} strength={0.22} args={0.11}/>
+            <MetaBall color="indianred" position={[0.1, 0, -0.1]} strength={0.3} args={0.11}/>
+            <MetaBall color="indianred" position={[0.2, 0, 0]} strength={0.32} args={0.11}/>
+            <MetaBall color="indianred" position={[-0.1, 0, 0]} strength={0.32} args={0.11}/>
+            <MetaBall color="indianred" position={[0.2, 0, 0.1]} strength={0.22} args={0.11}/>
+            <MetaBall color="indianred" position={[0.1, 0, -0.1]} strength={0.2} args={0.11}/>
             <Pointer />
           </MarchingCubes>
 
